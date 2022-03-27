@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -33,12 +38,15 @@ a:hover {
 
 /* -----HEADER-----  */
 #main-header {
+    background-color: black;
+    color: white;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 15px;
-    background-color: black;
-    color: white;
 }
 
 /* SEZIONE DI SINISTRA DELL'HEADER - LOGO E SEARCHBAR  */
@@ -65,4 +73,37 @@ a:hover {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+/* -----MAIN-CONTENT----- */
+#main-content {
+    min-height: 500px;
+}
+
+/* -----FOOTER----- */
+#footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-area {
+    width: calc(100% / 3);
+    padding: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 25px;
 }

@@ -6,33 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="main-header">
-        <div class="left-section">
-            <a href="#"><img src="img/BLNC-Logo-VERSION1-White.png" class="logo" alt="logo"></a>
-            <input type="text" placeholder="Search the best NFT collection right now" class="search-bar">
-        </div>
+        <div class="container header-container">
+            <!-- colonna di sinistra - logo e search bar  -->
+            <div class="left-section">
 
-        <nav class="right-section">
-            <ul class="navigation">
-                <li><a href="#">Example</a></li> 
-                <li><a href="#">Example</a></li>
-                <li><a href="#">Example</a></li>
-                <li><a href="#">Example</a></li>
-                <li>
-                    <button class="button"><a href="#">Connect Wallet</a></button>
-                </li>
-            </ul>
-        </nav>
+                <!-- logo  -->
+                <a href="#"><img src="img/BLNC-Logo-VERSION1-White.png" class="logo" alt="logo"></a>
+
+                <!-- searchbar  -->
+                <input type="text" placeholder="Search the best NFT collection right now" class="search-bar">
+            </div>
+
+            <!-- colonna di destra - navigazione  -->
+            <nav class="right-section">
+
+                <!-- menù di navigazione  -->
+                <ul class="navigation">
+                    <li><a href="#">Example</a></li> 
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Example</a></li>
+
+                    <!-- bottone di collegamento wallet  -->
+                    <li>
+                        <button class="button"><a href="#">Connect Wallet</a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- QUI VA LA TABELLA DATI  -->
     </main>
 
-    <footer>
+    <footer id="footer">
         <!-- QUI VA IL FOOTER  -->
+        <div class="container footer-container">
+            <!-- prima area - contatti  -->
+            <div class="footer-area">
+                <img src="img/BLNC-Logo-VERSION1-White.png" alt="logo" class="logo">
+                <p>The best tool to find and analyze nft</p>
+                <ul class="social-links">
+                    <li><a href=""><i class="fa-brands fa-facebook-f social-icon"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram social-icon"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter social-icon"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-discord social-icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-area"></div>
+            <div class="footer-area"></div>
+        </div>
     </footer>
 </body>
 </html>
