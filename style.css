@@ -1,0 +1,68 @@
+/* -----RESET E COMMON-----  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    color: #7B88FF;
+}
+
+.button {
+    padding: 8px 15px;
+    background-color: #7B88FF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+/* -----HEADER-----  */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: black;
+    color: white;
+}
+
+/* SEZIONE DI SINISTRA DELL'HEADER - LOGO E SEARCHBAR  */
+.left-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 8px 15px;
+    background-color: rgb(65, 65, 65);
+    border: 1px solid #7B88FF;
+    color: white;
+}
+
+/* SEZIONE DI DESTRA DELL'HEADER - NAVIGAZIONE  */
+.navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
