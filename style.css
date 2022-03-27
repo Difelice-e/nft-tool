@@ -29,11 +29,11 @@ a:hover {
 }
 
 .button {
-    padding: 8px 15px;
+    padding: 5px 12px;
     background-color: #7B88FF;
     color: white;
     border-radius: 5px;
-    border: 1px solid #7B88FF;
+    border: 3px solid #7B88FF;
 }
 
 .button:hover {
@@ -55,10 +55,11 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
     padding: 20px 15px;
 }
 
-/* SEZIONE DI SINISTRA DELL'HEADER - LOGO E SEARCHBAR  */
+/* SEZIONE DI SINISTRA DELL'HEADER - LOGO  */
 .left-section {
     display: flex;
     gap: 20px;
@@ -69,12 +70,18 @@ a:hover {
     width: 150px;
 }
 
+/* SEZIONE CENTRALE - SEARCHBAR  */
+.search-bar_wrapper {
+    flex-grow: 1;
+}
+
 .search-bar {
-    width: 250px;
+    width: 100%;
     padding: 8px 15px;
     background-color: rgb(65, 65, 65);
     border: 1px solid #7B88FF;
     color: white;
+    border-radius: 999px;
 }
 
 /* SEZIONE DI DESTRA DELL'HEADER - NAVIGAZIONE  */
@@ -88,6 +95,9 @@ a:hover {
 #main-content {
     min-height: 700px;
     background-color: rgb(65, 65, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -----FOOTER----- */
@@ -111,6 +121,15 @@ a:hover {
 }
 
 /* PRIMA ZONA FOOTER - LOGO, PICCOLA DESCRIZIONE, CONTATTI  */
+.footer-text::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 75%;
+    background-color: #7B88FF; 
+    margin-top: 20px;
+}
+
 .social-links {
     display: flex;
     gap: 15px;
@@ -125,6 +144,7 @@ a:hover {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.25rem;
+    color: #7B88FF;
 }
 
 .footer-links {
