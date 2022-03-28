@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Sans-serif;
 }
 
 .container {
@@ -41,6 +42,10 @@ a:hover {
     color: #7B88FF;
 }
 
+.button a:hover {
+    color: currentColor;
+}
+
 .colored-text {
     color: #7B88FF;
 }
@@ -67,7 +72,7 @@ a:hover {
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
 }
 
 /* SEZIONE CENTRALE - SEARCHBAR  */
@@ -93,12 +98,47 @@ a:hover {
 
 /* -----MAIN-CONTENT----- */
 #main-content {
-    min-height: 700px;
+    min-height: calc(100vh - 446px - 76px);
     background-color: rgb(65, 65, 65);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* TABELLA */
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    color: white;
+  }
+  
+  .content-table thead tr {
+    background-color: #7B88FF;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #222222;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: rgb(44, 44, 44);
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #7B88FF;
+  }
 
 /* -----FOOTER----- */
 #footer {
